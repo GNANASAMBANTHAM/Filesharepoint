@@ -1,0 +1,292 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dee6ed;
+  font-family: 'Arial', sans-serif;
+}
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#create-group-form {
+  display: none; /* Initially hide the create group form */
+  margin-top: 20px; /* Adjust spacing as needed */
+}
+
+#create-group-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#create-group-form form {
+  margin-top: 10px;
+}
+
+#create-group-form input[type="text"],
+#create-group-form input[type="password"],
+#create-group-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+#create-group-form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#create-group-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#create-group-form input[type="submit"]:focus {
+  outline: none;
+}
+
+#create-group-form input[type="text"]:focus,
+#create-group-form input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #f8fafb;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+  font-size: small;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+  
+  
+}
+
+.header .close-icon {
+  font-size: 1.2rem;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.header .close-icon:hover {
+  color: #333;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="file"],
+form select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input[type="submit"] {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* List Styles */
+.group-list {
+  list-style: none;
+  padding: 0;
+}
+
+.group-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.group-list li:last-child {
+  border-bottom: none;
+}
+
+.group-list li .group-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.group-list li .group-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.group-list li .group-info {
+  flex-grow: 1;
+}
+
+.group-list li .group-info h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.group-list li .group-info p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Create Group Styles */
+.create-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-group:hover {
+  background-color: #e0e0e0;
+}
+
+.create-group .group-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-group .group-icon svg {
+  width: 15px;
+  height: 15px;
+  fill: #888;
+}
+
+.create-group .group-info h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.create-group .group-info p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.create-group .arrow-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.create-group .arrow-icon svg {
+  width: 10px;
+  height: 10px;
+  fill: #888;
+}
+.separate-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+  max-width: 100%;
+}
+
+.separate-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.separate-container table th,
+.separate-container table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.separate-container table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.separate-container table td a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
